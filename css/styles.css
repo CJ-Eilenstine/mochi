@@ -61,7 +61,6 @@ nav .anchors .button {
   border: 3px solid #591730;
   color: #290a25;
   padding: 0.3em 1em;
-  border-radius: 0.25em;
   position: relative;
   isolation: isolate;
 }
@@ -98,7 +97,6 @@ nav .cart .button {
   border: 3px solid #591730;
   color: #290a25;
   padding: 0.3em 1em;
-  border-radius: 0.25em;
   position: relative;
   isolation: isolate;
 }
@@ -119,7 +117,7 @@ nav .cart .button:hover::after, nav .cart .button:focus-visible::after {
 
 .hero {
   min-height: calc(100% - 80px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/backup-mochi-banner-web.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/backup-mochi-banner-web.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,8 +135,9 @@ nav .cart .button:hover::after, nav .cart .button:focus-visible::after {
 .hero h1 {
   color: #591730;
   font-size: 3rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-top: -50px;
 }
 
 .flavors {
@@ -192,7 +191,6 @@ nav .cart .button:hover::after, nav .cart .button:focus-visible::after {
   border: 1px solid #591730;
   color: #290a25;
   padding: 0.3em 1em;
-  border-radius: 0.25em;
   background-color: transparent;
   position: relative;
   isolation: isolate;
@@ -231,18 +229,25 @@ footer i:hover {
 }
 
 .about-wrapper {
-  height: calc(100vh - 160px);
+  min-height: calc(100vh - 160px);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   padding-right: 20px;
+  flex-wrap: wrap;
+}
+.about-wrapper .about-img {
+  min-width: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about-wrapper .about-img img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
+  max-width: 300px;
   height: auto;
   border: 2px solid #b23d2e;
   border-radius: 2rem;
@@ -257,6 +262,7 @@ footer i:hover {
   justify-content: space-around;
   align-items: center;
   max-width: 300px;
+  margin-left: 1em;
 }
 .about-wrapper .about-text h2 {
   color: #290a25;
@@ -267,6 +273,11 @@ footer i:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 836px) {
+  .about-wrapper .about-img {
+    margin: 3em 0;
+  }
+}
 .form {
   min-height: calc(100vh - 240px);
   margin-top: 50px;
@@ -314,7 +325,6 @@ footer i:hover {
   border: 1px solid #591730;
   color: #290a25;
   padding: 0.825em 1em;
-  border-radius: 0.5em;
   background-color: transparent;
   position: relative;
   isolation: isolate;
