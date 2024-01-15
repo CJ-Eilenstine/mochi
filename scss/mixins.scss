@@ -1,0 +1,96 @@
+// site buttons
+@mixin site-nav-button() {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: 3px solid $primary-color;
+  color: $text-color;
+  padding: 0.3em 1em;
+  border-radius: 0.25em;
+
+  position: relative;
+  isolation: isolate;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: $secondary-color;
+
+    inset: 0;
+    scale: 0 1;
+    transform-origin: right;
+    transition: scale 450ms;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    transform-origin: left;
+    scale: 1 1;
+  }
+}
+
+@mixin site-button() {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  max-width: 50%;
+  align-self: center;
+  border: 1px solid $primary-color;
+  color: $text-color;
+  padding: 0.3em 1em;
+  border-radius: 0.25em;
+  background-color: transparent;
+
+  position: relative;
+  isolation: isolate;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: $secondary-color;
+
+    inset: 0;
+    scale: 0 1;
+    transform-origin: right;
+    transition: scale 450ms;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    transform-origin: left;
+    scale: 1 1;
+  }
+}
+
+@mixin site-contact-button() {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  min-width: 100px;
+  align-self: center;
+  border: 1px solid $primary-color;
+  color: $text-color;
+  padding: 0.825em 1em;
+  border-radius: 0.5em;
+  background-color: transparent;
+
+  position: relative;
+  isolation: isolate;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: $secondary-color;
+
+    inset: 0;
+    scale: 0 1;
+    transform-origin: right;
+    transition: scale 450ms;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    transform-origin: left;
+    scale: 1 1;
+  }
+}

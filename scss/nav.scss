@@ -1,0 +1,37 @@
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+
+  .anchors {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1rem;
+
+    .button {
+      @include site-nav-button();
+    }
+  }
+
+  .cart {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    // height: 80px;
+    margin-right: 50px;
+
+    i {
+      font-size: 24px;
+      color: $text-color;
+      padding-right: 50px;
+    }
+    .button {
+      @include site-nav-button();
+    }
+  }
+}

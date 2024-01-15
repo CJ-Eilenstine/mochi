@@ -1,0 +1,51 @@
+.flavors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  //   margin-top: 50px;
+  margin: 50px auto 0 auto;
+  min-height: calc(100vh - 160px);
+  padding: 0 5rem;
+  max-width: calc(100vw - 80px);
+
+  .flavor {
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    width: 200px;
+    height: 350px;
+    border: 1px solid $primary-color;
+    margin: 2rem 2rem;
+    border-radius: 1rem;
+
+    img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 300px;
+      max-height: 200px;
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
+    }
+
+    h1 {
+      font-size: 30px;
+      text-align: center;
+      font-family: $merry;
+    }
+
+    p {
+      font-size: 12px;
+      text-align: center;
+      font-family: $merry;
+    }
+
+    button {
+      @include site-button();
+    }
+  }
+}

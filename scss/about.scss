@@ -1,0 +1,45 @@
+.about-wrapper {
+  height: calc(100vh - 160px);
+  display: flex;
+  // flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  // align-items: center;
+  width: 100%;
+  padding-right: 20px;
+
+  .about-img {
+    img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 500px;
+      height: auto;
+      border: 2px solid $accent-color;
+      border-radius: 2rem;
+      transition: ease-in 0.5s;
+    }
+
+    img:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 300px;
+
+    h2 {
+      color: $text-color;
+      text-align: center;
+    }
+
+    p {
+      color: $text-color;
+      text-align: center;
+    }
+  }
+}
