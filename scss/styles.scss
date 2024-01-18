@@ -1,24 +1,25 @@
 @font-face {
-    font-family: merryweather;
-    src: url(../images/Merriweather/Merriweather-Light.ttf);
+  font-family: merryweather;
+  src: url(../images/Merriweather/Merriweather-Light.ttf);
 }
 
 @font-face {
-    font-family: merryweather-italic;
-    src: url(../images/Merriweather/Merriweather-Italic.ttf);
+  font-family: merryweather-italic;
+  src: url(../images/Merriweather/Merriweather-Italic.ttf);
 }
 
 @font-face {
-    font-family: merryweather-bold;
-    src: url(../images/Merriweather/Merriweather-Bold.ttf);
+  font-family: merryweather-bold;
+  src: url(../images/Merriweather/Merriweather-Bold.ttf);
 }
 
 @import "variables.scss";
-@import "mixins.scss";
 @import "structure.scss";
+@import "mixins.scss";
 @import "nav.scss";
 @import "home.scss";
 @import "flavors.scss";
 @import "footer.scss";
 @import "about.scss";
 @import "contact.scss";
+@import "login.scss";

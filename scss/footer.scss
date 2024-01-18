@@ -7,10 +7,10 @@ footer {
   max-width: 100vw;
 
   i {
-    color: $text-color;
+    color: $primary-color;
     padding: 0 5px;
     font-size: 20px;
-    transition: 0.5s ease-in;
+    transition: 200ms ease-in;
   }
 
   i:hover {

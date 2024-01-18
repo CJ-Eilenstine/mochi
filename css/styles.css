@@ -58,9 +58,12 @@ nav .anchors .button {
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
-  border: 3px solid #591730;
+  box-shadow: 3px 3px 5px 0 rgba(89, 23, 48, 0.4);
   color: #290a25;
   padding: 0.3em 1em;
+  font-family: merryweather;
+  border-radius: 1rem;
+  overflow: hidden;
   position: relative;
   isolation: isolate;
 }
@@ -87,18 +90,26 @@ nav .cart {
 }
 nav .cart i {
   font-size: 24px;
-  color: #290a25;
-  padding-right: 50px;
+  color: #591730;
+  padding-right: 0px;
+  transition: 200ms ease-in;
+}
+nav .cart i:hover {
+  transform: scale(1.3);
 }
 nav .cart .button {
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
-  border: 3px solid #591730;
+  box-shadow: 3px 3px 5px 0 rgba(89, 23, 48, 0.4);
   color: #290a25;
   padding: 0.3em 1em;
+  font-family: merryweather;
+  border-radius: 1rem;
+  overflow: hidden;
   position: relative;
   isolation: isolate;
+  margin-left: 50px;
 }
 nav .cart .button::after {
   content: "";
@@ -152,6 +163,7 @@ nav .cart .button:hover::after, nav .cart .button:focus-visible::after {
 }
 .flavors .flavor {
   max-width: 300px;
+  min-width: 198px;
   min-height: 200px;
   display: flex;
   flex-direction: column;
@@ -159,9 +171,10 @@ nav .cart .button:hover::after, nav .cart .button:focus-visible::after {
   padding-bottom: 1rem;
   width: 200px;
   height: 350px;
-  border: 1px solid #591730;
+  box-shadow: 3px 3px 5px 0 rgba(89, 23, 48, 0.2);
   margin: 2rem 2rem;
   border-radius: 1rem;
+  overflow: hidden;
 }
 .flavors .flavor img {
   background-position: center;
@@ -169,11 +182,11 @@ nav .cart .button:hover::after, nav .cart .button:focus-visible::after {
   background-size: cover;
   max-width: 300px;
   max-height: 200px;
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
+  transition: 200ms transform ease-in-out;
 }
 .flavors .flavor h1 {
-  font-size: 30px;
+  font-size: 1.5rem;
+  margin: 0 0.125em;
   text-align: center;
   font-family: merryweather;
 }
@@ -192,6 +205,9 @@ nav .cart .button:hover::after, nav .cart .button:focus-visible::after {
   color: #290a25;
   padding: 0.3em 1em;
   background-color: transparent;
+  font-family: merryweather;
+  border-radius: 1rem;
+  overflow: hidden;
   position: relative;
   isolation: isolate;
 }
@@ -210,6 +226,10 @@ nav .cart .button:hover::after, nav .cart .button:focus-visible::after {
   scale: 1 1;
 }
 
+.flavor:hover > img {
+  transform: scale(1.025);
+}
+
 footer {
   height: 75px;
   background-color: transparent;
@@ -219,10 +239,10 @@ footer {
   max-width: 100vw;
 }
 footer i {
-  color: #290a25;
+  color: #591730;
   padding: 0 5px;
   font-size: 20px;
-  transition: 0.5s ease-in;
+  transition: 200ms ease-in;
 }
 footer i:hover {
   transform: scale(1.3);
@@ -244,14 +264,14 @@ footer i:hover {
   justify-content: center;
 }
 .about-wrapper .about-img img {
-  background-position: center;
+  object-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
   max-width: 300px;
   height: auto;
-  border: 2px solid #b23d2e;
+  box-shadow: 3px 3px 5px 0 rgba(89, 23, 48, 0.2);
   border-radius: 2rem;
-  transition: ease-in 0.5s;
+  transition: ease-in 450ms;
 }
 .about-wrapper .about-img img:hover {
   transform: scale(1.2);
@@ -326,6 +346,9 @@ footer i:hover {
   color: #290a25;
   padding: 0.825em 1em;
   background-color: transparent;
+  font-family: merryweather;
+  border-radius: 1rem;
+  overflow: hidden;
   position: relative;
   isolation: isolate;
   margin-top: 1rem;
@@ -341,6 +364,134 @@ footer i:hover {
   transition: scale 450ms;
 }
 .form button:hover::after, .form button:focus-visible::after {
+  transform-origin: left;
+  scale: 1 1;
+}
+
+.login-register-wrapper {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.login-register-wrapper .login {
+  min-height: calc(100vh - 240px);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 1rem;
+}
+.login-register-wrapper .login h1 {
+  color: #290a25;
+  font-family: merryweather-bold;
+}
+.login-register-wrapper .login input {
+  padding: 20px;
+  height: 30px;
+  width: 200px;
+  border: none;
+  border-radius: 1rem;
+  border: 1px solid #591730;
+  margin-bottom: 1rem;
+}
+.login-register-wrapper .login input:focus {
+  outline: 3px solid #591730;
+}
+.login-register-wrapper .login label {
+  font-family: merryweather;
+  color: #290a25;
+}
+.login-register-wrapper .login button {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  min-width: 100px;
+  align-self: center;
+  border: 1px solid #591730;
+  color: #290a25;
+  padding: 0.825em 1em;
+  background-color: transparent;
+  font-family: merryweather;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+}
+.login-register-wrapper .login button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #eec4be;
+  inset: 0;
+  scale: 0 1;
+  transform-origin: right;
+  transition: scale 450ms;
+}
+.login-register-wrapper .login button:hover::after, .login-register-wrapper .login button:focus-visible::after {
+  transform-origin: left;
+  scale: 1 1;
+}
+.login-register-wrapper .register {
+  min-height: calc(100vh - 240px);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 1rem;
+}
+.login-register-wrapper .register h1 {
+  color: #290a25;
+  font-family: merryweather-bold;
+}
+.login-register-wrapper .register input {
+  padding: 20px;
+  height: 30px;
+  width: 200px;
+  border: none;
+  border-radius: 1rem;
+  border: 1px solid #591730;
+  margin-bottom: 1rem;
+}
+.login-register-wrapper .register input:focus {
+  outline: 3px solid #591730;
+}
+.login-register-wrapper .register label {
+  font-family: merryweather;
+  color: #290a25;
+}
+.login-register-wrapper .register button {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  min-width: 100px;
+  align-self: center;
+  border: 1px solid #591730;
+  color: #290a25;
+  padding: 0.825em 1em;
+  background-color: transparent;
+  font-family: merryweather;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+}
+.login-register-wrapper .register button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #eec4be;
+  inset: 0;
+  scale: 0 1;
+  transform-origin: right;
+  transition: scale 450ms;
+}
+.login-register-wrapper .register button:hover::after, .login-register-wrapper .register button:focus-visible::after {
   transform-origin: left;
   scale: 1 1;
 }

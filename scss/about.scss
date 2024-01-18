@@ -15,14 +15,16 @@
     align-items: center;
     justify-content: center;
     img {
-      background-position: center;
+      object-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      object-fit: cover;
       max-width: 300px;
       height: auto;
-      border: 2px solid $accent-color;
+      // border: 2px solid $accent-color;
+      box-shadow: 3px 3px 5px 0 rgba(89, 23, 48, 0.2);
+
       border-radius: 2rem;
-      transition: ease-in 0.5s;
+      transition: ease-in 450ms;
     }
 
     img:hover {
