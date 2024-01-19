@@ -306,17 +306,22 @@ footer i:hover {
   justify-content: space-around;
   align-items: center;
 }
+.form h1 {
+  color: #290a25;
+  font-family: merryweather-bold;
+  margin-bottom: 2rem;
+}
 .form input {
   padding: 20px;
   height: 30px;
-  width: 200px;
+  width: 300px;
   border: none;
   border-radius: 1rem;
   border: 1px solid #591730;
   margin-bottom: 1rem;
 }
 .form input:focus {
-  outline: 3px solid #591730;
+  outline: 2px solid #591730;
 }
 .form label {
   margin-bottom: 0.5rem;
@@ -326,7 +331,7 @@ footer i:hover {
 .form textarea {
   padding: 1rem;
   height: 30px;
-  width: 200px;
+  width: 300px;
   border: none;
   border-radius: 1rem;
   border: 1px solid #591730;
@@ -334,7 +339,7 @@ footer i:hover {
   overflow: hidden;
 }
 .form textarea:focus {
-  outline: 3px solid #591730;
+  outline: 2px solid #591730;
 }
 .form button {
   display: inline-block;
@@ -393,14 +398,14 @@ footer i:hover {
 .login-register-wrapper .login input {
   padding: 20px;
   height: 30px;
-  width: 200px;
+  width: 300px;
   border: none;
   border-radius: 1rem;
   border: 1px solid #591730;
   margin-bottom: 1rem;
 }
 .login-register-wrapper .login input:focus {
-  outline: 3px solid #591730;
+  outline: 2px solid #591730;
 }
 .login-register-wrapper .login label {
   font-family: merryweather;
@@ -452,14 +457,14 @@ footer i:hover {
 .login-register-wrapper .register input {
   padding: 20px;
   height: 30px;
-  width: 200px;
+  width: 300px;
   border: none;
   border-radius: 1rem;
   border: 1px solid #591730;
   margin-bottom: 1rem;
 }
 .login-register-wrapper .register input:focus {
-  outline: 3px solid #591730;
+  outline: 2px solid #591730;
 }
 .login-register-wrapper .register label {
   font-family: merryweather;

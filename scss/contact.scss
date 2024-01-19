@@ -6,10 +6,16 @@
   justify-content: space-around;
   align-items: center;
 
+  h1 {
+    color: $text-color;
+    font-family: $merry-bold;
+    margin-bottom: 2rem;
+  }
+
   input {
     padding: 20px;
     height: 30px;
-    width: 200px;
+    width: 300px;
     border: none;
     border-radius: 1rem;
     border: 1px solid $primary-color;
@@ -17,7 +23,7 @@
   }
 
   input:focus {
-    outline: 3px solid $primary-color;
+    outline: 2px solid $primary-color;
   }
 
   label {
@@ -29,7 +35,7 @@
   textarea {
     padding: 1rem;
     height: 30px;
-    width: 200px;
+    width: 300px;
     border: none;
     border-radius: 1rem;
     border: 1px solid $primary-color;
@@ -38,7 +44,7 @@
   }
 
   textarea:focus {
-    outline: 3px solid $primary-color;
+    outline: 2px solid $primary-color;
   }
 
   button {
