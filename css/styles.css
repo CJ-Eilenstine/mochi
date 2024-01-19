@@ -59,7 +59,7 @@ nav .anchors .button {
   cursor: pointer;
   text-decoration: none;
   box-shadow: 3px 3px 5px 0 rgba(89, 23, 48, 0.4);
-  color: #290a25;
+  color: #591730;
   padding: 0.3em 1em;
   font-family: merryweather;
   border-radius: 1rem;
@@ -102,7 +102,7 @@ nav .cart .button {
   cursor: pointer;
   text-decoration: none;
   box-shadow: 3px 3px 5px 0 rgba(89, 23, 48, 0.4);
-  color: #290a25;
+  color: #591730;
   padding: 0.3em 1em;
   font-family: merryweather;
   border-radius: 1rem;
@@ -189,11 +189,13 @@ nav .cart .button:hover::after, nav .cart .button:focus-visible::after {
   margin: 0 0.125em;
   text-align: center;
   font-family: merryweather;
+  color: #591730;
 }
 .flavors .flavor p {
   font-size: 12px;
   text-align: center;
   font-family: merryweather;
+  color: #b23d2e;
 }
 .flavors .flavor button {
   display: inline-block;
@@ -285,11 +287,11 @@ footer i:hover {
   margin-left: 1em;
 }
 .about-wrapper .about-text h2 {
-  color: #290a25;
+  color: #591730;
   text-align: center;
 }
 .about-wrapper .about-text p {
-  color: #290a25;
+  color: #b23d2e;
   text-align: center;
 }
 
@@ -307,7 +309,7 @@ footer i:hover {
   align-items: center;
 }
 .form h1 {
-  color: #290a25;
+  color: #591730;
   font-family: merryweather-bold;
   margin-bottom: 2rem;
 }
@@ -326,7 +328,7 @@ footer i:hover {
 .form label {
   margin-bottom: 0.5rem;
   font-family: merryweather;
-  color: #290a25;
+  color: #591730;
 }
 .form textarea {
   padding: 1rem;
@@ -392,7 +394,7 @@ footer i:hover {
   margin: 1rem 1rem;
 }
 .login-register-wrapper .login h1 {
-  color: #290a25;
+  color: #591730;
   font-family: merryweather-bold;
 }
 .login-register-wrapper .login input {
@@ -409,7 +411,7 @@ footer i:hover {
 }
 .login-register-wrapper .login label {
   font-family: merryweather;
-  color: #290a25;
+  color: #591730;
 }
 .login-register-wrapper .login button {
   display: inline-block;
@@ -451,7 +453,7 @@ footer i:hover {
   margin: 1rem 1rem;
 }
 .login-register-wrapper .register h1 {
-  color: #290a25;
+  color: #591730;
   font-family: merryweather-bold;
 }
 .login-register-wrapper .register input {
@@ -468,7 +470,7 @@ footer i:hover {
 }
 .login-register-wrapper .register label {
   font-family: merryweather;
-  color: #290a25;
+  color: #591730;
 }
 .login-register-wrapper .register button {
   display: inline-block;
