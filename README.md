@@ -1,3 +1,3 @@
 # mochi
 
- https://mochi-web-khaki.vercel.app/
+https://mochi-web-khaki.vercel.app
