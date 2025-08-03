@@ -10,7 +10,7 @@
   max-width: calc(100vw - 80px);
 
   .flavor {
-    max-width: 300px;
+    // max-width: 300px;
     min-width: 198px;
     min-height: 200px;
     display: flex;
@@ -57,4 +57,10 @@
 
 .flavor:hover > img {
   transform: scale(1.025);
+}
+
+@media screen and (max-width: 510px) {
+  .flavors {
+    padding: 0;
+  }
 }

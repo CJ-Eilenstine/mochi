@@ -274,7 +274,6 @@ p {
   max-width: calc(100vw - 80px);
 }
 .flavors .flavor {
-  max-width: 300px;
   min-width: 198px;
   min-height: 200px;
   display: flex;
@@ -344,6 +343,11 @@ p {
   transform: scale(1.025);
 }
 
+@media screen and (max-width: 510px) {
+  .flavors {
+    padding: 0;
+  }
+}
 footer {
   height: 75px;
   background-color: transparent;
